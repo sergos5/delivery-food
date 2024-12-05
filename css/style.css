@@ -1,10 +1,21 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    line-height: normal;
+    font-style: normal;
 }
 
 body {
     margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 .page-wrapper {
@@ -30,9 +41,8 @@ body {
     padding: 8px 16px;
     outline: none;
     cursor: pointer;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    font-weight: 400;
 }
 
 .btn-primary {
@@ -86,12 +96,11 @@ body {
 
 .footer-box {
     gap: 36px;
+    fle
 }
 
 .footer-nav {
     flex-grow: 1;
-
-
 }
 
 .footer-nav ul {
@@ -106,8 +115,8 @@ body {
 .footer-nav ul li a {
     color: #595959;
     text-decoration: none;
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .footer-social {
@@ -115,4 +124,39 @@ body {
     align-items: center;
     justify-content: flex-end;
     gap: 21px;
+}
+
+.bunner {}
+
+.bunner-item {
+    background-image: url(../img/bunner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 68px;
+    border-radius: 10px;
+}
+
+.bunner-item--title {
+    font-weight: 700;
+    font-size: 39px;
+    color: #302c34;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.bunner-item--subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #302c34;
+    width: 50%;
+}
+
+@media (max-width: 991px) {
+    .bunner-item--title {
+        width: 100%;
+    }
+
+    .bunner-item--subtitle {
+        width: 100%;
+    }
 }
