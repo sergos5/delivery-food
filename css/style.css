@@ -290,10 +290,6 @@ p {
     color: #000;
 }
 
-.btn-card {
-    height: 40px;
-}
-
 .product-card__description--goodtitle {
     padding-right: 30px;
     font-weight: 700;
@@ -346,13 +342,116 @@ p {
     gap: 21px;
 }
 
-.cart-modal__overlay {}
+.cart-modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.cart-modal__header {}
+.cart-modal {
+    width: 100%;
+    padding: 40px 45px;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 780px;
+}
+
+.cart-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.cart-modal__header--title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+}
+
+.cart-modal__header--close {
+    cursor: pointer;
+}
 
 .cart-modal__body {}
 
-.cart-modal__footer {}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.cart-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.cart-item--title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #000;
+}
+
+.cart-item__controls {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item__controls--price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+    padding-right: 48px;
+}
+
+.cart-item__controls button {
+    border: 1px solid #40A9FF;
+    background: #fff;
+    color: #40A9FF;
+}
+
+.cart-item__controls--count {
+    text-align: center;
+    width: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+}
+
+.cart-modal__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.cart-modal__footer--price {
+    border-radius: 5px;
+    padding: 15px 20px;
+    background: #262626;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FAFAFA;
+}
+
+.cart-modal__footer--controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 @media (max-width: 991px) {
     .bunner-item__title {
